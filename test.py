@@ -12,12 +12,12 @@ if not os.path.exists("test.csv"):
 
 test = pd.read_csv("test.csv", index_col=None)
 
-assert test.loc[0, "fingerprint"] == "adhoc queri"
-assert test.loc[6, "fingerprint"] == "agricultur product"
-assert test.loc[11, "fingerprint"] == "airlin"
-assert test.loc[12, "fingerprint"] == "airlin compani"
-assert test.loc[16, "fingerprint"] == "analyt applic"
-assert test.loc[25, "fingerprint"] == "analyt model"
+assert test.loc[0, "key"] == "adhoc queri"
+assert test.loc[6, "key"] == "agricultur product"
+assert test.loc[11, "key"] == "airlin"
+assert test.loc[12, "key"] == "airlin compani"
+assert test.loc[16, "key"] == "analyt applic"
+assert test.loc[25, "key"] == "analyt model"
 
 #
 # Retorna error si la carpeta output/ no existe
